@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TepalMiteSimularPi</title>
+    <title>Code Website</title>
 </head>
+
 <body style="display:flex;justify-content:center;align-items:center;height:100vh;margin:0;">
 
 <div>
@@ -19,19 +20,26 @@ function checkCode(){
     if(code === "ObscureCode"){
         window.location.href = "https://www.youtube.com/watch?v=iDLmYZ5HqgM";
     }
+
     else if(code === "RandomGuy"){
         window.location.href = "https://www.youtube.com/shorts/ZzBorHRa2SE";
     }
+
     else if(code === "Banger"){
-        window.location.href = "https://www.youtube.com/watch?v=pfZolkBG-4I&list=RDpfZolkBG-4I&start_radio=1";
+        document.body.innerHTML = `
+            <video controls autoplay width="100%">
+                <source src="videos/Banger.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        `;
     }
-    
-    }
+
     else{
         alert("Wrong code!");
     }
 
 }
+
 </script>
 
 </body>
