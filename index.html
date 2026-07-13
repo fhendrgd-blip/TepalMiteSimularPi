@@ -1,50 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Website</title>
+</head>
+
+<body style="display:flex;justify-content:center;align-items:center;height:100vh;margin:0;">
+
+<div>
+    <input id="code" type="text" placeholder="Enter code">
+    <button onclick="checkCode()">Submit</button>
+</div>
+
 <script>
-
-
-document.addEventListener("contextmenu", function(event) {
-    event.preventDefault();
-    alert("NO INSPECT FOR U HAHAHA 😈");
-});
-
-// Block common DevTools shortcuts
-document.addEventListener("keydown", function(event) {
-
-
-    if (event.key === "F12") {
-        event.preventDefault();
-        alert("NO INSPECT FOR U HAHAHA 😈");
-        return;
-    }
-
-
-    if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "i") {
-        event.preventDefault();
-        alert("NO INSPECT FOR U HAHAHA 😈");
-        return;
-    }
-
- 
-    if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "j") {
-        event.preventDefault();
-        alert("NO INSPECT FOR U HAHAHA 😈");
-        return;
-    }
-
-
-    if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "c") {
-        event.preventDefault();
-        alert("NO INSPECT FOR U HAHAHA 😈");
-        return;
-    }
-
-    
-    if (event.ctrlKey && event.key.toLowerCase() === "u") {
-        event.preventDefault();
-        alert("NO INSPECT FOR U HAHAHA 😈");
-        return;
-    }
-
-});
 
 function checkCode(){
 
@@ -53,13 +20,13 @@ function checkCode(){
     if(code === "ObscureCode"){
         window.location.href = "https://www.youtube.com/watch?v=iDLmYZ5HqgM";
     }
-
     else if(code === "RandomGuy"){
         window.location.href = "https://www.youtube.com/shorts/ZzBorHRa2SE";
     }
-else if(code === "Samgrfa"){
+          else if(code === "Samgfra"){
         window.location.href = "https://www.youtube.com/shorts/TINNKi2Vwt8";
     }
+        
     else{
         alert("Wrong code!");
     }
@@ -67,3 +34,6 @@ else if(code === "Samgrfa"){
 }
 
 </script>
+
+</body>
+</html>
